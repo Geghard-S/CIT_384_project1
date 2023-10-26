@@ -131,8 +131,6 @@ fetch('../files/videos.txt')
       
       // Set iframe attributes
       iframe.src = link;
-    //   iframe.width = '560';
-    //   iframe.height = '315';
       iframe.allowFullscreen = true;
 
       // Add iframe to div
@@ -144,3 +142,22 @@ fetch('../files/videos.txt')
     });
 
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const openBtn = document.getElementById('open');
+    const externalPortal = document.getElementById('externalPortal');
+    
+    openBtn.addEventListener('click', async () => {
+        try {
+            const response = await fetch('https://www.imdb.com/title/tt15398776/?ref_=tt_mv_close'); 
+            const content = await response.text();
+            externalPortal.appendChild(document.importNode(new DOMParser().parseFromString(content, 'text/html').body, true));
+            document.body.style.overflow = 'hidden';
+        } catch (error) {
+            console.error('Error loading external content:', error);
+        }
+    });
+});
+
+
+

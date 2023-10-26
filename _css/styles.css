@@ -117,7 +117,7 @@ blockquote {
 	margin: auto;
 }
 
-body {
+/* body {
 	background-color: black;
 }
 
@@ -248,8 +248,7 @@ h2{
 	font-size: 1.5rem;
 }
 
-#videos{
-}
+
 
 iframe{
 	background-color: black;
@@ -290,3 +289,277 @@ footer {
 	color: white;
 	background-color: #333;
 }
+
+.modal {
+	max-width: 400px; 
+	max-height: 600px;
+	overflow: auto;
+  }
+
+#error{
+	font-size: 3rem;
+	color: red;
+	background-color: #fff;
+	text-align: center;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Montserrat:ital,wght@0,200;1,200&family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Montserrat:ital,wght@0,200;1,200&family=Pixelify+Sans&display=swap');
+
+/* 
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pixelify Sans', sans-serif;
+*/
+
+/* 
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pixelify Sans', sans-serif; 
+*/
+
+
+/* Color Palette
+#EEC643
+#141414
+#EEF0F2
+#0D21A1
+#011638
+*/
+
+/* Global styles 
+------------------------------------*/
+
+
+/* ---------- */
+/*  Main body */
+/* -----------*/
+
+html {
+	box-sizing: border-box;
+}
+	
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+*{
+	margin: 0;
+}
+
+body {
+    background: #011638;
+}
+
+/* //////////////// */
+/* End of Main body */
+/* //////////////// */
+
+
+
+
+
+/* ------- */
+/*  NavBar */
+/* --------*/
+
+nav {
+	background-color: #EEC643;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+  }
+  
+  nav li {
+	margin: 0 10px;
+  }
+  
+  nav a {
+	color: #141414;
+	text-align: center; 
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  nav a:hover {
+	background-color: #0D21A1; 
+	color: #EEF0F2;
+  }
+
+/* ///////////// */
+/* End of NavBar */
+/* ///////////// */
+
+
+
+
+
+/* --------- */
+/*  Sections */
+/* ----------*/
+
+header,footer {
+    background:#011638;
+    color:#EEF0F2
+}
+
+.workExperience{
+	color: #0D21A1;
+    font-family: 'Fira Sans', sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+
+.education{
+    background:#EEC643;
+    color:#011638;
+}
+
+footer{
+	background:#011638;
+    color:#EEC643;
+	text-align: center;
+}
+
+/* /////////////// */
+/* End of Sections */
+/* /////////////// */
+
+
+
+
+
+/* --------- */
+/*  Headings */
+/* ----------*/
+
+h1{
+	font-size: 60px;
+}
+  
+h2{
+	font-size: 45px;
+	padding-top: 50px;
+}
+
+h1, h2 {
+	margin-top: 0;
+}
+
+/* /////////////// */
+/* End of Headings */
+/* /////////////// */
+
+
+
+
+
+/* --------- */
+/*  Wrappers */
+/* ----------*/
+
+.content-wrap{
+	/* display: flex; */
+	/* border: 5px solid #fff; */
+	margin: auto;
+	padding: 50px;
+	max-width: 100vw;
+	/* text-align: center; */
+	overflow: hidden;
+}
+
+.header-wrap{
+	background-color: inherit;
+	overflow: auto;
+
+}
+
+.workExperience-wrap{
+	background-color: inherit;
+	padding-bottom: 150px;
+}
+
+.education-wrap{
+	background-color: inherit;
+	padding-bottom: 100px;
+
+}
+
+.footer-wrap{
+	background-color: inherit;
+}
+
+/* ////////////// */
+/* End of Wrapper */
+/* ////////////// */
+
+
+
+
+
+/* --------- */
+/*  The rest */
+/* ----------*/
+
+.profile-img{
+	/* float: left; */
+	/* width: 300px!important; */
+	border-radius: 50%;
+	height:max-content;
+	/* margin-right: 30px; */
+}
+
+.social{
+	text-decoration: none;
+}
+
+.contact-info a{
+	padding: 10px 20px; 
+	display: inline-block;
+} 
+
+.column-narrow{
+	/* min-width: 200px; */
+	width: 30%;
+	float: left;
+	padding-right: 3%; 
+	/* min-height: 175px; */
+	height: auto;
+}
+
+.column-wide{
+	width: 70%; 
+	float: left; 
+	min-height: 225px;
+}
+
+.image-bg{
+	background: url(../assets/pexels-simon-berger-1323550.jpg);
+	background-attachment: fixed;
+  	background-size: cover;
+}
+
+.alpha-bg {
+	background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(238,240,242,0.75) 26%, rgba(238,240,242,0.75) 100%);
+}
+
+#contact a{
+	color: #EEC643;
+	font-size: 20px;
+}
+
+#contact i{
+	font-size: 30px;
+}
+
+#copyright{
+	background-color: #EEC643;
+	color:#011638
+}
+
+/* /////////////// */
+/* End of The rest */
+/* /////////////// */

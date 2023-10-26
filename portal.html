@@ -22,34 +22,20 @@
     <main role="main">
         <article role="article">
             <section>
-                <button onclick="openModal()">Open Modal</button>
-
-                <portal class="modal">
-                    <div class="modal-content">
-                        <h1>This is a modal dialog</h1>
-                        <p>Click the button to close the modal</p>
-                        <button onclick="closeModal()">Close Modal</button>
-                    </div>
-                </portal>
+                <button id="open">Open Portal</button>
+                <p id="error">The portal function is not working due to the access limit to the address.</p>
+                <p id="error">&quot;Access to fetch at 'https://www.imdb.com/title/tt15398776/?ref_=tt_mv_close' from
+                    origin 'http://127.0.0.1:5500' has been blocked by CORS policy: No 'Access-Control-Allow-Origin'
+                    header is present on the requested resource. If an opaque response serves your needs, set the
+                    request's mode to 'no-cors' to fetch the resource with CORS disabled.&quot;</p>
+                <portal id="externalPortal"></portal>
             </section>
         </article>
     </main>
     <footer role="contentinfo">
         <p>© 2023 Gerard Simonian</p>
     </footer>
-
-    <!-- <script src="js/script.js"></script> -->
-    <script>
-        function openModal() {
-            document.querySelector('portal').activate();
-        }
-
-        function closeModal() {
-            // Remove the portal element from the DOM
-            document.body.removeChild(document.querySelector('portal'));
-        }
-    </script>
-
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
